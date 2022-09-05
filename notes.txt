@@ -1,5 +1,5 @@
 git add .
 git commit -m "
-Create a page. yarn rw generate page Home /
+Create about page. Check Routes.js... imports are automatic.
 "
 git push origin -u main

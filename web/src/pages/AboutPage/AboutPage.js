@@ -1,10 +1,11 @@
 import { Link, routes } from '@redwoodjs/router'
 import { MetaTags } from '@redwoodjs/web'
 
-const HomePage = () => {
+const AboutPage = () => {
     return (
         <>
-            <MetaTags title="Home" description="Home page" />
+            <MetaTags title="About" description="About page" />
+
             <header>
                 <h1>Redwood Blog</h1>
                 <nav>
@@ -16,8 +17,10 @@ const HomePage = () => {
                 </nav>
             </header>
             <main>Home</main>
+            <p>Redwood link examples</p>
+            <Link to={routes.home()}>Return Home</Link>
         </>
     )
 }
 
-export default HomePage
+export default AboutPage
