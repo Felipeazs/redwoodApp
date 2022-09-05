@@ -1,8 +1,7 @@
 git add .
 git commit -m "
-Saving data to database. Create Contact model schema: yarn rw prisma migrate dev.
-Create the sdl file for Contact (CRUD): yarn rw g sdl Contact.
-Create contact with graphql.
-To see if create contact works (GUI): yarn rw prisma studio
+Creating loading states to form submits.
+Import Toaster.
+Reset form fields with useForm.
 "
 git push origin -u main
