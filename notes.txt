@@ -1,7 +1,6 @@
 git add .
 git commit -m "
-Using prisma as database management. api/db.schema.prisma. yarn rw prisma migrate dev: Creates a SQL schema in api/migrations.
-Generate a scaffold to generate a page linked to the schema created. yarn rw g scaffold Post: access in /posts
-Automatic generation of Post component, graphql files
+Creating cell for automatic linked graphql results to components, including loading an error handling. yarn rw g cell Articles.
+Generates component ArticlesCell.
 "
 git push origin -u main
