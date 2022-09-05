@@ -1,7 +1,8 @@
 git add .
 git commit -m "
-Generate forms. yarn rw g page Contact.
-Add validation to fields.
-Show error messages.
+Saving data to database. Create Contact model schema: yarn rw prisma migrate dev.
+Create the sdl file for Contact (CRUD): yarn rw g sdl Contact.
+Create contact with graphql.
+To see if create contact works (GUI): yarn rw prisma studio
 "
 git push origin -u main
