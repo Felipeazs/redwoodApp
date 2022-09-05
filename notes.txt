@@ -1,7 +1,6 @@
 git add .
 git commit -m "
-Creating loading states to form submits.
-Import Toaster.
-Reset form fields with useForm.
+Validate form fields on the server-side.
+display server-side error. FormError
 "
 git push origin -u main

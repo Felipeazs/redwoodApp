@@ -1,3 +1,5 @@
+import { validate } from '@redwoodjs/api'
+
 import { db } from 'src/lib/db'
 
 export const contacts = () => {
@@ -11,6 +13,7 @@ export const contact = ({ id }) => {
 }
 
 export const createContact = ({ input }) => {
+    validate(input.email, 'email', { email: true })
     return db.contact.create({
         data: input,
     })
@@ -28,3 +31,28 @@ export const deleteContact = ({ id }) => {
         where: { id },
     })
 }
+
+//Other validations
+// export const createCar = ({ input }) => {
+//     validate(input.make, 'make', {
+//         inclusion: ['Audi', 'BMW', 'Ferrari', 'Lexus', 'Tesla'],
+//     })
+//     validate(input.color, 'color', {
+//         exclusion: {
+//             in: ['Beige', 'Mauve'],
+//             message: 'No one wants that color',
+//         },
+//     })
+//     validate(input.hasDamage, 'hasDamage', {
+//         absence: true,
+//     })
+//     validate(input.vin, 'vin', {
+//         format: /[A-Z0-9]+/,
+//         length: { equal: 17 },
+//     })
+//     validate(input.odometer, 'odometer', {
+//         numericality: { positive: true, lessThanOrEqual: 10000 },
+//     })
+
+//     return db.car.create({ data: input })
+// }
