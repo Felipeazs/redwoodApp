@@ -1,6 +1,7 @@
 git add .
 git commit -m "
-Creating cell for automatic linked graphql results to components, including loading an error handling. yarn rw g cell Articles.
-Generates component ArticlesCell.
+Generate page Article details. yarn rw g page Article. Add {id} to route.
+Generate a cell. yarn rw g cell Article. Import into the ArticlePage. Display the details.
+Generate component to house duplicated code for displaying articles. yarn rw g component Article
 "
 git push origin -u main
