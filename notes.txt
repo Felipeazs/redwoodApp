@@ -1,5 +1,7 @@
 git add .
 git commit -m "
-Create Layouts... yarn rw g layout blog. Import BlogLayout in the Routes.js page.
+Using prisma as database management. api/db.schema.prisma. yarn rw prisma migrate dev: Creates a SQL schema in api/migrations.
+Generate a scaffold to generate a page linked to the schema created. yarn rw g scaffold Post: access in /posts
+Automatic generation of Post component, graphql files
 "
 git push origin -u main
