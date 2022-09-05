@@ -1,0 +1,5 @@
+git add .
+git commit -m "
+Create a page. yarn rw generate page Home /
+"
+git push origin -u main
